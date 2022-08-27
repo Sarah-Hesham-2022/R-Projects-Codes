@@ -1,0 +1,7 @@
+mat=matrix(seq(20,50,by=2),nrow=4,ncol=4,byrow = TRUE)
+print(mat)
+cat("The elements that accept division by 7 in this matrix are :")
+for(i in 1:nrow(mat))
+  for(j in 1:ncol(mat))
+    if(mat[i,j]%%7==0)
+      print(mat[i,j])
